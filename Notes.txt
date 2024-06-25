@@ -1,0 +1,4 @@
+} catch(DataAccessException ex) {
+    log.error("Data access exception occurred while deleting Client from database, Exception message: {}", ex.getMessage());
+    throw new ClientServiceBusinessException("Database error occurred while deleting a Client");
+}
